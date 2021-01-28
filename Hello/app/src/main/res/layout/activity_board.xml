@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEE9">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:background="@drawable/backiconwhite" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:text="[ TIP 정보 게시판 ]"
+        android:textColor="#DB7093"
+        android:textSize="30sp" />
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/boardListView"
+        android:layout_margin="10dp"
+        android:dividerHeight="10dp"
+        android:divider="#FFDEE9"></ListView>
+
+</LinearLayout>

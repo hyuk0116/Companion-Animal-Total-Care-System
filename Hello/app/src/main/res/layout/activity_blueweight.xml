@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:background="@drawable/backiconwhite"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/titleview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/title_2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvBluetoothStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/atitlegothic"
+        android:text="오늘의 몸무게를 재보세요!"
+        app:layout_constraintTop_toBottomOf="@+id/titleview"
+        />
+
+    <TextView
+        android:id="@+id/tvReceiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/atitlegothic"
+        android:textSize="15pt"
+        android:text="Receive Data"
+        app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus"
+        />
+
+    <TextView
+        android:id="@+id/tvFinaldata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/atitlegothic"
+        android:layout_marginTop="60dp"
+        android:textSize="22pt"
+        android:text="Loading..."
+        app:layout_constraintStart_toStartOf="@+id/tvReceiveData"
+        app:layout_constraintTop_toBottomOf="@+id/tvReceiveData"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agothic"
+        android:text="업데이트 일시 : "
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tvFinaldata"
+        app:layout_constraintTop_toBottomOf="@+id/tvFinaldata"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnBluetoothOn"
+        android:layout_width="80dp"
+        android:layout_height="96dp"
+        android:background="@drawable/icon_blueon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintStart_toStartOf="@id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        />
+
+    <Button
+        android:id="@+id/btnBluetoothOff"
+        android:layout_width="80dp"
+        android:layout_height="96dp"
+        android:background="@drawable/icon_blueoff"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn"/>
+
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="80dp"
+        android:layout_height="96dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/icon_connect"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOff"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOff"
+        />
+
+    <Button
+        android:id="@+id/btnToMyInfo"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBluetoothOff"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

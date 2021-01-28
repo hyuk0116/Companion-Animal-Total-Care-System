@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:orientation="vertical"
+        android:background="#FFDEE9"
+        >
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:background="@drawable/backiconwhite" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/nounregister"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textColor="#DB7093"
+            android:textSize="25dp"
+            android:fontFamily="@font/atitlegothic"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:ems="10"
+        android:id="@+id/new_id"
+        android:drawableStart="@drawable/nouneamil"
+        android:hint=" 이메일 입력" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:ems="10"
+        android:id="@+id/new_name"
+        android:drawableStart="@drawable/nounaccount"
+        android:hint=" 이름 입력" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/nounpw"
+        android:ems="10"
+        android:id="@+id/new_pw"
+        android:hint=" 비밀번호" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:ems="10"
+        android:drawableStart="@drawable/nounpw"
+        android:id="@+id/pw_check"
+        android:hint=" 비밀번호 확인" />
+
+    <Button
+        android:text="회원가입"
+        android:textColor="#FF6A89"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="10dp"
+        android:background="#FFCFDA"
+        android:fontFamily="@font/atitlegothic"
+        android:onClick="insert"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="#FFDEE9"
+        >
+    </LinearLayout>
+
+</LinearLayout>

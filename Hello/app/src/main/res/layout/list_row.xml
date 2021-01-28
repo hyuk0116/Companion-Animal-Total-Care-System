@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#FFAAAF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_feed"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerInside"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:fontFamily="@font/atitlegothic"
+            android:lineSpacingExtra="6dp"
+            android:padding="10dp"
+            android:text="회사"
+            android:textSize="17dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atitlegothic"
+                android:lineSpacingExtra="6dp"
+                android:background="#FFE3EE"
+                android:padding="10dp"
+                android:text="이름"
+                android:textSize="14dp"
+                 />
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atitlegothic"
+                android:background="#FFFFFF"
+                android:lineSpacingExtra="6dp"
+                android:padding="10dp"
+                android:text="가격"
+                android:textSize="14dp"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

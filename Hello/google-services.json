@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525513713212",
+    "firebase_url": "https://testfcm-faa7e.firebaseio.com",
+    "project_id": "testfcm-faa7e",
+    "storage_bucket": "testfcm-faa7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525513713212:android:e565aed1108e9eaaf6c539",
+        "android_client_info": {
+          "package_name": "org.techtown.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525513713212-agh1580e7v5v65bh9tqe3v20d4nneg65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcp0J2mS-3J59L1cCsagd244AHwabKsIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525513713212-agh1580e7v5v65bh9tqe3v20d4nneg65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

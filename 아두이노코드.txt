@@ -1,0 +1,98 @@
+#include "HX711.h"
+#include <SoftwareSerial.h>
+
+#define calibration_factor1 -44940.00 //This value is obtained using the SparkFun_HX711_Calibration sketch
+#define calibration_factor2 -49370.00
+#define calibration_factor3 -58460.00
+#define calibration_factor4 -44720.00
+
+
+#define DOUT1  3
+#define CLK1  2
+
+#define DOUT2  5
+#define CLK2  4
+
+#define DOUT3  7
+#define CLK3  6
+
+#define DOUT4  9
+#define CLK4  8
+
+#define KG 0.453592
+
+#define BT_RXD 11
+#define BT_TXD 12
+
+SoftwareSerial bluetooth(BT_RXD, BT_TXD);
+
+HX711 scale1(DOUT1, CLK1);
+HX711 scale2(DOUT2, CLK2);
+HX711 scale3(DOUT3, CLK3);
+HX711 scale4(DOUT4, CLK4);
+
+ 
+
+void setup() {
+  bluetooth.begin(9600);
+  
+  scale1.set_scale(calibration_factor1); //This value is obtained by using the SparkFun_HX711_Calibration sketch
+  scale1.tare(); //Assuming there is no weight on the scale at start up, reset the scale to 0
+  scale2.set_scale(calibration_factor2); 
+  scale2.tare();
+  scale3.set_scale(calibration_factor3); 
+  scale3.tare();
+  scale4.set_scale(calibration_factor3); 
+  scale4.tare();
+}
+
+void loop() {
+  double pre, sum;
+  int c=0,t=0;
+  double range;
+  pre = 0; sum = 0;
+  
+  while(true){
+    delay(1000);  //1초
+    
+    if(c>3&&t>3){
+      break;
+    }
+    pre = sum;  //이전 무게
+    sum = SUM();  //현재 무게
+    range = pre-sum;  //오차범위
+  
+    if((range < 0.5 && range > -0.5)){  //오차범위 내이면 카운트
+      c++;
+    }
+    else{   //아니면 다시 처음부터 카운트
+      c=0;
+    }
+
+    bluetooth.print("s ");  
+    bluetooth.println(sum, 3);  //현재 무게
+  
+    t++;
+  }
+
+  if(sum > 1){
+    bluetooth.print("f ");
+    bluetooth.println(sum, 3);
+  }
+
+  c=0; //카운트,시간 초기화
+  t=0;
+}
+
+double SUM(){
+  double sum, load1, load2, load3, load4;
+
+  load1 = scale1.get_units()*KG;
+  load2 = scale2.get_units()*KG;
+  load3 = scale3.get_units()*KG;
+  load4 = scale4.get_units()*KG;
+  
+  sum = load1+load2+load3+load4;
+
+  return sum;
+}

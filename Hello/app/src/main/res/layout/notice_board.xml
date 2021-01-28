@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="게시판"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#505050"
+        android:id="@+id/titleText"
+        android:background="#ffffff"
+        android:lineSpacingExtra ="6dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/agothic"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F59696">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="작성자"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/agothic"
+                android:id="@+id/contentText"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2019-11-05"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/agothic"
+                android:id="@+id/dateText"></TextView>
+
+        </LinearLayout>
+
+
+</LinearLayout>

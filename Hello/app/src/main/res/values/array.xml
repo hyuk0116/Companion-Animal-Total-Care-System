@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="종">
+        <item>질병 목록</item>
+        <item>파보바이러스감염증</item>
+        <item>코로나바이러스감염증</item>
+        <item>광견병</item>
+        <item>고양이전염성복막염</item>
+        <item>심장사상충</item>
+        <item>고양이 심장사상충</item>
+        <item>보데텔라폐렴</item>
+    </string-array>
+    <string-array name="Feed_selection">
+        <item>등록순</item>
+        <item>가격순</item>
+    </string-array>
+    <string-array name="Pet">
+        <item>강아지</item>
+        <item>고양이</item>
+    </string-array>
+    <string-array name="Dog">
+        <item>푸들</item>
+        <item>말티즈</item>
+        <item>코카스파니엘</item>
+    </string-array>
+    <string-array name="Cat">
+        <item>페르시안</item>
+        <item>샴</item>
+        <item>코리안숏헤어</item>
+    </string-array>
+    <string-array name="Age">
+        <item>주니어</item>
+        <item>어덜트</item>
+        <item>시니어</item>
+    </string-array>
+</resources>

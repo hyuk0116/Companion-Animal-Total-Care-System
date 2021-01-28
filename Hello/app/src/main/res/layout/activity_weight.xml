@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFDEE9"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:background="@drawable/backiconwhite" />
+
+        <TextView
+            android:id="@+id/textView_obesity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" [ 몸무게와 비만도 ]"
+            android:fontFamily="@font/atitlegothic"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/nounscale"
+            android:textSize="25dp"
+            android:textColor="#DB7093"
+            android:padding="7dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"/>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/textExplain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:textSize="18dp"
+            android:text="▶ 저체중 : 50 미만\n▶ 평균 : 50~93\n▶ 비만 : 93 초과"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:lineSpacingExtra ="6dp"
+            android:fontFamily="@font/atitlegothic"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:id="@+id/textStatusNow"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableStart="@drawable/nounscale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/atitlegothic"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textFeedAmount"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableStart="@drawable/nounbowl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/atitlegothic"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

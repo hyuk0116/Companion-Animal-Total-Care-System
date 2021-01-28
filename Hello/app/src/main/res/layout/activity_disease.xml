@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEE9">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:background="@drawable/backiconwhite" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" [ 질병 조회 ]"
+            android:textColor="#DB7093"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="7dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/atitlegothic"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/nounsearch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/spinner_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:fontFamily="@font/atitlegothic"
+        android:entries="@array/종"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/atitlegothic"
+        android:layout_weight="1"
+        android:text="조회해주세요."
+        android:textColor="#505050" />
+
+    <ImageView
+        android:id="@+id/Symptom_img"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/symptom" />
+
+    <TextView
+        android:id="@+id/Symptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/agothic"
+        android:lineSpacingExtra ="6dp"
+        android:textSize="16sp"
+        android:text="질병을 선택해주세요."
+        android:textColor="#505050" />
+
+    <ImageView
+        android:id="@+id/Prevention_img"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/prevention" />
+
+    <TextView
+        android:id="@+id/Prevention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/agothic"
+        android:lineSpacingExtra ="6dp"
+        android:textSize="16sp"
+        android:text="질병을 선택해주세요."
+        android:textColor="#505050" />
+
+    <ImageView
+        android:id="@+id/treatment_img"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/treatment" />
+
+    <TextView
+        android:id="@+id/Treatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/agothic"
+        android:lineSpacingExtra ="6dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textSize="16sp"
+        android:text="질병을 선택해주세요."
+        android:textColor="#505050" />
+
+    <ImageView
+        android:id="@+id/Species_img"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/species" />
+
+    <TextView
+        android:id="@+id/Species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:lineSpacingExtra ="6dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/agothic"
+        android:text="질병을 선택해주세요."
+        android:textColor="#505050" />
+
+</LinearLayout>
+</ScrollView>

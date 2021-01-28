@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_feed"
+            android:layout_width="70dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/icon_feed" />
+
+
+        <ImageButton
+            android:id="@+id/btn_fat"
+            android:layout_width="70dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/icon_weight" />
+
+        <ImageButton
+            android:id="@+id/btn_disease"
+            android:layout_width="70dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/icon_disease" />
+
+        <ImageButton
+            android:id="@+id/btn_tipboard"
+            android:layout_width="70dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/icon_tip" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="130dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/icon_base" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/useremail"
+        android:fontFamily="@font/atitlegothic"
+        android:text="[ 계정 ] 으로 로그인 중입니다."
+        android:textColor="#DB7093"
+        />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.hello">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:icon="@mipmap/ic_launcher_pet"
+        android:label="반려동물 종합 케어 시스템"
+        android:roundIcon="@mipmap/ic_launcher_pet"
+        android:supportsRtl="true"
+        android:theme="@style/NoTitle01">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".Disease" />
+        <activity android:name=".Login" />
+        <activity android:name=".LoginRequest" />
+        <activity android:name=".LoginObject" />
+        <activity android:name=".Register" />
+        <activity android:name=".Blutooth" />
+        <activity android:name=".Pet" />
+        <activity android:name=".member" />
+        <activity android:name=".Feed" />
+        <activity android:name=".FeedListView" />
+        <activity android:name=".LoadImage" />
+        <activity android:name=".Recommend" />
+        <activity android:name=".Tutorial" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Tutorial2" />
+        <activity android:name=".Tutorial3" />
+        <activity android:name=".Board" />
+        <activity android:name=".BoardListAdaper" />
+        <activity android:name=".Notice" />
+        <activity android:name=".EditInfo" />
+        <activity android:name=".EditInfo2" />
+        <activity android:name=".Heights" />
+        <activity android:name=".showInfo" />
+        <activity android:name=".MyInfo" />
+        <activity android:name=".Weights" />
+        <activity android:name=".Chart" />
+        <activity android:name=".DailyRecommend" />
+        <activity android:name=".Diseaselist" />
+        <service
+            android:name=".MyFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Loading"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>
